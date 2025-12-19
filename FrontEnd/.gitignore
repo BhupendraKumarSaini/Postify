@@ -14,9 +14,6 @@ build/
 .env.development
 .env.production
 
-# Uploads (Backend)
-uploads/
-
 # Database / Local Data
 data/
 
