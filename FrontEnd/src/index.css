@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/* GLOBAL BASE */
+html {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111827;
+  font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+/* Prevent horizontal scroll */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* BLOG / PROSE CONTENT */
+.prose {
+  color: #374151;
+}
+
+/* Headings */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: #064e3b;
+}
+
+/* Paragraph spacing */
+.prose p {
+  line-height: 1.75;
+}
+
+/* Links */
+.prose a {
+  color: #065f46;
+  word-break: break-word;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+/* Code blocks */
+.prose pre {
+  background-color: #111827;
+  color: #f9fafb;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+/* Inline code */
+.prose code {
+  background-color: #f3f4f6;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.375rem;
+  word-break: break-word;
+}
+
+/* Images */
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+/* Tables */
+.prose table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Iframes / embeds */
+.prose iframe {
+  max-width: 100%;
+  border-radius: 0.75rem;
+}
+
+/* UI HELPERS */
+/* Card */
+.card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 30px rgba(6, 95, 70, 0.15);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+/* Modal */
+.modal {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 20px 60px rgba(6, 95, 70, 0.25);
+}
+
+/* TOUCH & INTERACTION */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Avoid scaling links globally */
+button:active {
+  transform: scale(0.98);
+}
+
+/* SCROLLBAR (POLISHED) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(6, 95, 70, 0.4);
+  border-radius: 8px;
+}
+
+/* Remove ugly focus for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

@@ -1,0 +1,45 @@
+# Node & Package Manager
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build Output
+dist/
+build/
+
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Uploads (Backend)
+uploads/
+
+# Database / Local Data
+data/
+
+# OS / Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Vite
+.vite/
+
+# Firebase
+.firebase/
+
+# Logs
+logs/
+*.log
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp

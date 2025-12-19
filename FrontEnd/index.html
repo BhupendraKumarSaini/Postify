@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- BASIC META -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Postify — Write. Publish. Inspire.</title>
+
+    <!-- FAVICON & PWA -->
+    <link rel="icon" type="image/png" href="/Tab_Logo.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Postify is a modern blogging platform to write, publish, and explore inspiring stories on technology, programming, AI, career, and lifestyle."
+    />
+    <meta
+      name="keywords"
+      content="Postify, blogging platform, write blogs, tech blogs, programming blogs, AI blogs"
+    />
+    <meta name="author" content="Postify" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Postify — Write. Publish. Inspire." />
+    <meta
+      property="og:description"
+      content="Create beautiful blogs, share your ideas, and grow your audience on Postify."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/Tab_Logo.png" />
+    <meta property="og:url" content="https://postify.app" />
+    <meta property="og:site_name" content="Postify" />
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Postify — Write. Publish. Inspire." />
+    <meta
+      name="twitter:description"
+      content="A modern blogging platform for creators and developers."
+    />
+    <meta name="twitter:image" content="/Tab_Logo.png" />
+
+    <!-- PWA / MOBILE -->
+    <meta name="theme-color" content="#065F46" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- SECURITY HEADERS (DEV SAFE) -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="
+    default-src 'self';
+
+    script-src
+      'self'
+      'unsafe-inline'
+      https://cdn.tiny.cloud;
+
+    style-src
+      'self'
+      'unsafe-inline'
+      https://cdn.tiny.cloud;
+
+    style-src-elem
+      'self'
+      'unsafe-inline'
+      https://cdn.tiny.cloud;
+
+    img-src
+      'self'
+      data:
+      blob:
+      https:
+      http://localhost:5000;
+
+    font-src
+      'self'
+      data:
+      https://cdn.tiny.cloud;
+
+    connect-src
+      'self'
+      https:
+      http://localhost:5000;
+
+    frame-src
+      https://cdn.tiny.cloud;
+
+    media-src
+      'self'
+      blob:;
+  "
+    />
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+  </head>
+
+  <body>
+    <noscript>
+      <strong>
+        Postify requires JavaScript to work properly. Please enable JavaScript.
+      </strong>
+    </noscript>
+
+    <div id="root"></div>
+
+    <!-- VITE ENTRY -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
