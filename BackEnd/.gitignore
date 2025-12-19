@@ -30,10 +30,6 @@ coverage/
 dist/
 build/
 
-# Uploads (user images, blog covers)
-uploads/
-uploads/**
-
 # OS / Editor files
 .DS_Store
 Thumbs.db
